@@ -1,0 +1,27 @@
+OASISFormat:      0.3
+Name:             hex
+Version:          0.1.0
+Synopsis:         ZBase32 convertor
+Authors:          Vsevolod Stakhov
+License:          ISC
+Plugins:          META (0.3), DevFiles (0.3)
+BuildTools:       ocamlbuild
+
+Library zbase32
+  Path:           lib/
+  Findlibname:    zbase32
+  Modules:        Zbase32
+
+Executable test
+  Path:           lib_test/
+  MainIs:         test.ml
+  Build$:         flag(tests)
+  CompiledObject: best
+  Install:        false
+  BuildDepends:   zbase32
+
+
+Test test_hex
+  Run$:               flag(tests)
+  Command:            $test
+  WorkingDirectory:   lib_test

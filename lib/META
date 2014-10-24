@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: a09a9cddfc8fd33f8daef6fe01c5d0f4)
+version = "0.1.0"
+description = "ZBase32 convertor"
+archive(byte) = "zbase32.cma"
+archive(byte, plugin) = "zbase32.cma"
+archive(native) = "zbase32.cmxa"
+archive(native, plugin) = "zbase32.cmxs"
+exists_if = "zbase32.cma"
+# OASIS_STOP
+
