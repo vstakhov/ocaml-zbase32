@@ -49,7 +49,6 @@ let of_string ?(pretty=false) s =
 		| _ -> invalid_arg "Zbase32.of_string: invalid modulo" );
     if pretty then
       if (i+1) mod 27 = 0 then Buffer.add_char buf '\n'
-      else if i+1 <> n then Buffer.add_char buf ' '
   done;
 	if !acc >= 0 then
 		Buffer.add_char buf b32a.[!acc land maxc] ;
