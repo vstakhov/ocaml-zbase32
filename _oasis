@@ -1,5 +1,5 @@
 OASISFormat:      0.3
-Name:             hex
+Name:             zbase32
 Version:          0.1.0
 Synopsis:         ZBase32 convertor
 Authors:          Vsevolod Stakhov
@@ -21,7 +21,7 @@ Executable test
   BuildDepends:   zbase32
 
 
-Test test_hex
+Test test_zbase32
   Run$:               flag(tests)
   Command:            $test
   WorkingDirectory:   lib_test

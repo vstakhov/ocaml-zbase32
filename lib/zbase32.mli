@@ -21,12 +21,12 @@ type t = string
 (** The type of base32 encodings. *)
 
 val of_string: ?pretty:bool -> string -> t
-(** [of_string s] is the base32 representation of the binary
-    string [s]. If [pretty] is set, the hexadecimal is formatted to 80
+(** [of_string s] is the zbase32 representation of the binary
+    string [s]. If [pretty] is set, the output is formatted to 80
     columms with some space, to ease reading it. The default value of
     [pretty] is [false]) *)
 
 val to_string: t -> string
-(** [to_string h] is binary string corresponding to the base32
+(** [to_string h] is binary string corresponding to the zbase32
     encoding [h]. The decoding function will skip whitespaces, tabs
     and newlines. *)

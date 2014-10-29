@@ -3,7 +3,7 @@ maintainer:   "vsevolod@highsecure.ru"
 authors:      "Vsevolod Stakhov"
 homepage:     "https://github.com/vstakhov/ocaml-zbase32"
 bug-reports:  "https://github.com/vstakhov/ocaml-zbase32/issues"
-dev-repo:     "https://github.com/vstakhov/ocaml-zbase32/ocaml-hex.git"
+dev-repo:     "https://github.com/vstakhov/ocaml-zbase32.git"
 license:      "ISC"
 
 build: [
@@ -11,5 +11,5 @@ build: [
   [make]
 ]
 install: [make "install"]
-remove:  ["ocamlfind" "remove" "hex"]
+remove:  ["ocamlfind" "remove" "zbase32"]
 depends: ["ocamlfind" {build}]
